@@ -1,0 +1,143 @@
+$P 00 AA 00;    IN R2,00H;   从IN单元读入一个被除数
+$P 02 A9 00;    IN R1,00H;   从IN单元读入一个除数 
+$P 04 D2 9F;    ST R2,9F;    R2->9F
+$P 06 24;       MOV R0,R1;  
+$P 07 96;       XOR R0,R2;
+$P 08 BA 10;    MOV R2,10H;
+$P 0A 38;       AND R0,R2;   得到符号位
+$P 0B D0 9A;    ST R0,9A;    将符号位保存至内存单元
+$P 0D C2 9F;    LD R2,9F;    
+$P 0F B8 00;    MOV R0,00H;  商置零  
+$P 11 BB 0F;    MOV R3,OFH;  0F->R3  
+$P 13 3D;       AND R1,R3;   求出Y*补码在R1中
+$P 14 3E;       AND R2,R3;   被除数求绝对值X*补在R2中
+$P 15 D2 9B;    ST R2,9B;
+$P 17 16;       SUB R2,R1;   判断是否溢出
+$P 18 BB 10;    MOV R3,10H;
+$P 1A 3E;       AND R2,R3;
+$P 1B F2 04;    JNZ START;   若无溢出则开始执行,即不等于0跳转
+$P 1D BB FF;    MOV R3,FFH;  若等于0则溢出则输出FF
+$P 1F AF 00;    OUT 00H,R3;
+$P 21 C2 9B;START:LD R2,9B; 
+$P 23 16;       SUB R2,R1;   被除数减Y*补得余数
+$P 24 BB 05;    MOV R3,05H;  将R3次数置为5
+$P 26 87; START1:DEC R3;
+$P 27 A4;       PUSH R0;
+$P 28 A5;       PUSH R1;
+$P 29 2D;       MOV R1,R3;  
+$P 2A B8 0F;    MOV R0,0FH;  
+$P 2C 33;       AND R1,R0;   判断次数是否为零
+$P 2D A1;       POP R1;
+$P 2E A0;       POP R0;
+$P 2F F3 15;    JZ START2;   若为0跳转置
+$P 31 A5;       PUSH R1;
+$P 32 A4;       PUSH R0;     
+$P 33 B8 10;    MOV R0,10H;
+$P 35 29;       MOV R1,R2;  
+$P 36 31;       AND R1,R0;   判断余数R2的正负
+$P 37 A0;       POP R0;
+$P 38 A1;       POP R1;      
+$P 39 F3 05;    JZ START3;   余数为正则跳置START3,
+$P 3B 8C;       SHL R0;      上商0，商左移1位
+$P 3C 8E;       SHL R2;      余数左移1位   
+$P 3D 06;       ADD R2,R1;   余数加上Y*补      
+$P 3E E7 26;    JMP START1;  跳到START1，次数减1
+$P 40 80; START3:INC R0;     若余数为正数上商1
+$P 41 8C;       SHL R0;      商左移一位
+$P 42 8E;       SHL R2;      余数左移1位
+$P 43 16;       SUB R2,R1;   余数减去Y*补
+$P 44 E7 26;    JMP START1;  跳到START1，次数减1     
+$P 46 BB 10;START2:MOV R3,10H;
+$P 48 29;       MOV R1,R2;  
+$P 49 3D;       AND R1,R3;   判断最后一次余数符号位正负
+$P 4A F3 02;    JZ START4;   跳到START4(若为正则跳）若为负数,即上商0
+$P 4C E7 4F;    JMP START5;  跳到START5
+$P 4E 80;START4:INC R0;      为正数上商1
+$P 4F C3 9A;START5:LD R3,9A;
+$P 51 B9 0F;    MOV R1,0FH;
+$P 53 34;       AND R0,R1;
+$P 54 0C;       ADD R0,R3;   得到带符号商      
+$P 55 AC 00;    OUT OOH,R0;  将R0输出
+$P 57 FF;       HALT;
+
+
+
+$uM 00 6F0ED001		;取指(MEM[PC]->IR),PC+1
+$uM 04 5F0ED005		;T2:MEM[PC]->B, T3:PC+1
+$uM 05 3EA2F800		;T1:PC->A, T3:A+B->PC
+$uM 06 7F0ED000		;T3:PC+1
+$uM 08 184AF800	
+$uM 09 184AF900  	;ADD	Rdi,Ri  T1:Rdi->A  T2:Ri->B  T3:A+B->Rdi
+$uM 0A 7D4AF000		;MOV	Rdi,Ri  T2、T3:Ri->iDBus  T3:iDBus->Rdi
+$uM 0B 184AF200		;AND	Rdi,Ri
+$uM 0C 184AF100	
+$uM 0D 184AF500	;AND	Rdi,Ri
+$uM 0E 190AF900	
+$uM 0F 190AF200	
+$uM 10 774BD011
+$uM 11 3A6AFA00
+$uM 12 3A6AFB13
+$uM 13 750BB000;CMP	Rdi,Ri  T1:Rdi->A  T2:Ri->B  T3:影响的标志位->PSW
+$uM 14 7FCED015		;T3:MEM[PC]->MAR, PC+1
+$uM 15 7F49C000		;T2:IO[[MAR]->Rdi
+$uM 16 7FCED017		;T3:MEM[PC]->MAR, PC+1
+$uM 17 7D09A000
+$uM 18 7DCAF019
+$uM 19 7F89D000
+$uM 1A 3A6AFB1B
+$uM 1B 7703B01C
+$uM 1C 7DCAF01D
+$uM 1D 7F89D000		;T2:Ri->IO[MAR]
+$uM 1E 7F4ED000		;T3:MEM[PC]->Rdi, PC+1
+$uM 20 7FCED021		;T3:MEM[PC]->MAR, PC+1
+$uM 21 7F49D000
+$uM 22 7DCAF023
+$uM 23 7F49D000		;T3:MEM[MAR]->Rdi
+$uM 24 1AEED825		;T1:Rdi->A, T2:MEM[PC]->B T3:A+B->MAR
+$uM 25 7F49D000		;T3:MEM[MAR]->Rdi
+$uM 28 7FCED029		;T3:MEM[PC]->MAR, PC+1
+$uM 29 7D09B000	
+$uM 2A 3ACAF02B
+$uM 2B 7D09B000
+$uM 2C 1AEED82D
+$uM 2D 7D09B000
+$uM 30 3A4AFA00 	;T2:Ri->MEM[MAR]
+$uM 31 3A4AFB00		;T1:Rdi->A T3:A-1->Rdi
+$uM 32 184AF300	
+$uM 33 3A4AF700
+$uM 34 3A4AF600
+$uM 35 184AF300
+$uM 36 185AF800
+$uM 37 185AF900
+$uM 38 7F0AF000
+$uM 39 7F0AF000
+$uM 3A 7F0AF000
+$uM 3B 7F0AFD00
+$uM 3C 7F1AFD00
+$uM 3D 7F0AFC00
+$uM 3E 7F1AFC00
+$uM 3F 7F0AF03F
+$uM 40 3A6AFB41
+$uM 41 5F0ED064
+$uM 42 570BD043
+$uM 43 7FCED062
+$uM 44 774BD045
+$uM 45 3A6AFA46;T1:Rdi->A T2:Ri->B T3: A xor B ->Rdi
+$uM 46 778BD047		;T3:MEM[SP]->PC				//RET
+$uM 47 3A6AFA00	
+$uM 48 3A6AFB49
+$uM 49 750BB000
+$uM 4A 774BD04B
+$uM 4B 3A6AFA00	;SP+1
+$uM 4E 7F8AD000		;T3:MEM[PC]->PC
+$uM 50 3A6AFB51		;SP -1,不允许改变标志位		//CALL data
+$uM 51 5F0ED060	
+$uM 52 3ACAF053
+$uM 53 7F49C000
+$uM 54 3ACAF055
+$uM 55 7D09A000	;T2:MEM[PC]->B, T3:PC+1
+$uM 60 7703B061		;T2:PC->MEM[SP]
+$uM 61 7E9AF000	
+$uM 62 7E19B063
+$uM 63 3A6AFA00
+$uM 64 761BB000	;T3:B->PC
