@@ -1,4 +1,4 @@
-package com.PoymorphicTest.FuZi;
+package com.PolymorphicTest.FuZi;
 
 interface IFu {
     public abstract void Imethod();

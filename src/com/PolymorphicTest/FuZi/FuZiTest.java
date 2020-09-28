@@ -1,4 +1,4 @@
-package com.PoymorphicTest.FuZi;
+package com.PolymorphicTest.FuZi;
 
 public class FuZiTest {
     //类的多态使用

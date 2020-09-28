@@ -1,4 +1,4 @@
-package com.PoymorphicTest.FuZi;
+package com.PolymorphicTest.FuZi;
 
 class Zi extends Fu implements IFu{
 
