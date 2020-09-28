@@ -1,3 +1,3 @@
 package com.PoymorphicTest.FuZi;
 
-class Fu {}
+abstract class Fu {}
