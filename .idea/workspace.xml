@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d645410-d1a3-47b1-9a10-53469be24a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/PoymorphicTest/FuZi/Fu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/PoymorphicTest/FuZi/FuZiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/PoymorphicTest/FuZi/Zi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/PoymorphicTest/FuZi/FuZiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PoymorphicTest/FuZi/FuZiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +52,26 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.InterfaceTest">
+  <component name="RunManager" selected="Application.FuZiTest">
     <configuration name="ArrayListSetAndAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.collection.ArrayListSetAndAdd" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FuZiTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.PoymorphicTest.FuZi.FuZiTest" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.PoymorphicTest.FuZi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,26 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lastAndIndexOfSubList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.collection.lastAndIndexOfSubList" />
-      <module name="Study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FuZiTest" />
         <item itemvalue="Application.InterfaceTest" />
         <item itemvalue="Application.InterfaceDemo3" />
         <item itemvalue="Application.InterfaceDemo" />
         <item itemvalue="Application.ArrayListSetAndAdd" />
-        <item itemvalue="Application.lastAndIndexOfSubList" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +152,7 @@
       <updated>1601204261002</updated>
       <workItem from="1601204262671" duration="249000" />
       <workItem from="1601274719237" duration="1168000" />
-      <workItem from="1601276726635" duration="6770000" />
+      <workItem from="1601276726635" duration="6833000" />
     </task>
     <task id="LOCAL-00001" summary="@me@alter">
       <created>1601204323416</created>
@@ -219,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601283282600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="@me@PoymorphicTest_FuZi,类的多态使用.">
+      <created>1601284346544</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601284346544</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +239,8 @@
     <MESSAGE value="@me@InterfaceDemo_TestThree,接口不可以创建对象." />
     <MESSAGE value="@me@InterfaceDemo_TestTwo,接口可以继承." />
     <MESSAGE value="@me@InterfaceDemo_PlayerImpl,运动员教练模型(类，抽象类，接口实现)." />
-    <option name="LAST_COMMIT_MESSAGE" value="@me@InterfaceDemo_PlayerImpl,运动员教练模型(类，抽象类，接口实现)." />
+    <MESSAGE value="@me@PoymorphicTest_FuZi,类的多态使用." />
+    <option name="LAST_COMMIT_MESSAGE" value="@me@PoymorphicTest_FuZi,类的多态使用." />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="77" key="#Project_Structure" timestamp="1601278985819">
@@ -245,30 +251,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601282828829" />
-    <state x="387" y="9" key="CommitChangelistDialog2" timestamp="1601283281891">
+    <state x="599" y="15" key="CommitChangelistDialog2" timestamp="1601284345889">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601283281891" />
+    <state x="599" y="15" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601284345889" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601204702519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601204702519" />
-    <state width="723" height="394" key="GridCell.Tab.0.bottom" timestamp="1601283157420">
+    <state width="723" height="9" key="GridCell.Tab.0.bottom" timestamp="1601284365475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="394" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601283157420" />
-    <state width="723" height="394" key="GridCell.Tab.0.center" timestamp="1601283157420">
+    <state width="723" height="9" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601284365475" />
+    <state width="723" height="9" key="GridCell.Tab.0.center" timestamp="1601284365474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="394" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601283157420" />
-    <state width="723" height="394" key="GridCell.Tab.0.left" timestamp="1601283157419">
+    <state width="723" height="9" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601284365474" />
+    <state width="723" height="9" key="GridCell.Tab.0.left" timestamp="1601284365474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="394" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601283157419" />
-    <state width="723" height="394" key="GridCell.Tab.0.right" timestamp="1601283157420">
+    <state width="723" height="9" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601284365474" />
+    <state width="723" height="9" key="GridCell.Tab.0.right" timestamp="1601284365474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="394" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601283157420" />
+    <state width="723" height="9" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601284365474" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1601277827758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
