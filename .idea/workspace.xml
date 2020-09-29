@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d645410-d1a3-47b1-9a10-53469be24a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/PolymorphicTest/DadKid/Dad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/PolymorphicTest/DadKid/Kid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/PolymorphicTest/DadKid/PolymorphicDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/PolymorphicTest/AnimalDog/Animal2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/PolymorphicTest/AnimalDog/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/PolymorphicTest/AnimalDog/PolymorphiDemo3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.PolymorphicDemo2">
+  <component name="RunManager" selected="Application.PolymorphiDemo3">
     <configuration name="FuZiTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.PolymorphicTest.FuZi.FuZiTest" />
       <module name="Study" />
@@ -68,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterfaceDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.InterfaceTests.TestTwo.InterfaceDemo3" />
+    <configuration name="InterfaceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.InterfaceTests.PlayerImpl.InterfaceTest" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.InterfaceTests.TestTwo.*" />
+          <option name="PATTERN" value="com.InterfaceTests.PlayerImpl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterfaceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.InterfaceTests.PlayerImpl.InterfaceTest" />
+    <configuration name="PolymorphiDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.PolymorphicTest.AnimalDog.PolymorphiDemo3" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.InterfaceTests.PlayerImpl.*" />
+          <option name="PATTERN" value="com.PolymorphicTest.AnimalDog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PolymorphiDemo3" />
         <item itemvalue="Application.PolymorphicDemo2" />
         <item itemvalue="Application.PolymorphicDemo" />
         <item itemvalue="Application.FuZiTest" />
         <item itemvalue="Application.InterfaceTest" />
-        <item itemvalue="Application.InterfaceDemo3" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +154,7 @@
       <updated>1601204261002</updated>
       <workItem from="1601204262671" duration="249000" />
       <workItem from="1601274719237" duration="1168000" />
-      <workItem from="1601276726635" duration="9372000" />
+      <workItem from="1601276726635" duration="11272000" />
     </task>
     <task id="LOCAL-00001" summary="@me@alter">
       <created>1601204323416</created>
@@ -254,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601285562890</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="@me@PoymorphicTest_DadKid,多态(DadKid类)实现.">
+      <created>1601286959246</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601286959246</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +280,8 @@
     <MESSAGE value="@me@PoymorphicTest_FuZi,类和接口的多态使用." />
     <MESSAGE value="@me@PoymorphicTest_FuZi,添加注释(父类引用指向子类的对象)." />
     <MESSAGE value="@me@PoymorphicTest_AnimalCat,父类引用指向子类的对象(AnimalCat类)实现." />
-    <option name="LAST_COMMIT_MESSAGE" value="@me@PoymorphicTest_AnimalCat,父类引用指向子类的对象(AnimalCat类)实现." />
+    <MESSAGE value="@me@PoymorphicTest_DadKid,多态(DadKid类)实现." />
+    <option name="LAST_COMMIT_MESSAGE" value="@me@PoymorphicTest_DadKid,多态(DadKid类)实现." />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="77" key="#Project_Structure" timestamp="1601278985819">
@@ -284,38 +292,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601284560338" />
-    <state x="475" y="10" key="CommitChangelistDialog2" timestamp="1601285562139">
+    <state x="345" y="18" key="CommitChangelistDialog2" timestamp="1601286958569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="475" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601285562139" />
+    <state x="345" y="18" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601286958569" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601204702519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601204702519" />
-    <state width="723" height="121" key="GridCell.Tab.0.bottom" timestamp="1601286815817">
+    <state width="723" height="121" key="GridCell.Tab.0.bottom" timestamp="1601340410987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="121" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601286815817" />
-    <state width="723" height="121" key="GridCell.Tab.0.center" timestamp="1601286815817">
+    <state width="723" height="121" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601340410987" />
+    <state width="723" height="121" key="GridCell.Tab.0.center" timestamp="1601340410987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="121" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601286815817" />
-    <state width="723" height="121" key="GridCell.Tab.0.left" timestamp="1601286815817">
+    <state width="723" height="121" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601340410987" />
+    <state width="723" height="121" key="GridCell.Tab.0.left" timestamp="1601340410987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="121" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601286815817" />
-    <state width="723" height="121" key="GridCell.Tab.0.right" timestamp="1601286815817">
+    <state width="723" height="121" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601340410987" />
+    <state width="723" height="121" key="GridCell.Tab.0.right" timestamp="1601340410987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="121" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601286815817" />
+    <state width="723" height="121" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601340410987" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1601277827758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601277827758" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1601285569347">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1601287005606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601285569347" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601287005606" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1601205137473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
