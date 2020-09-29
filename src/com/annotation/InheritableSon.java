@@ -9,7 +9,9 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 
-
+/*
+当注解 Inheritable 被 @Inherited 标注时，它具有继承性。否则，没有继承性。
+ */
 
 //@Inherited
 

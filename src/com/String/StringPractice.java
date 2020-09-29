@@ -17,7 +17,6 @@ import java.io.PrintWriter;
 public class StringPractice {
 
     public static void main(String[] args) throws IOException,FileNotFoundException{
-        // TODO Auto-generated method stub
         File file1 = new File("E:/workplace_asiaInfo/Study/src/com/String/in.txt");
         File file2 = new File("E:/workplace_asiaInfo/Study/src/com/String/out.txt");
         BufferedReader bReader;
