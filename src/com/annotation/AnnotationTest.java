@@ -22,6 +22,7 @@ class Person{
         System.out.println("\nsomebody："+name+","+age);
     }
 }
+
 public class AnnotationTest {
 
     public static void main(String[] args) throws Exception{
