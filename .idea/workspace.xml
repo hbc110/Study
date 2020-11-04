@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d645410-d1a3-47b1-9a10-53469be24a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/idCard/IdCardUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memoryAreaOverflow/HeapOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memoryAreaOverflow/JavaMethodAreaOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memoryAreaOverflow/JavaVMStackOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memoryAreaOverflow/JavaVMStackSOF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memoryAreaOverflow/objectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/memory/ReferenceCountingGC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/BananaPeel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Chinese.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/ThisDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/ThisDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/this1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/split/Spliit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/split/Spliit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="77" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -66,6 +71,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -84,13 +90,53 @@
       <recent name="E:\workplace_asiaInfo\Study\src\com\memoryAreaOverflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JavaMethodAreaOOM">
+  <component name="RunManager" selected="Application.Test2">
+    <configuration name="BananaPeel" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.BananaPeel" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CallableThreadTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thread.CallableThreadTest" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chinese" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.Chinese" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DirectMemoryOOM" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.memoryAreaOverflow.DirectMemoryOOM" />
+      <module name="Study" />
+      <option name="VM_PARAMETERS" value="-Xmx20M -XX:MaxDirectMemorySize=10M" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.memoryAreaOverflow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,6 +213,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Leaf" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.Leaf" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PassingThis" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.PassingThis" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReferenceCountingGC" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.memory.ReferenceCountingGC" />
+      <module name="Study" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.memory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RuntimeConstantPoolOOM" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.memoryAreaOverflow.RuntimeConstantPoolOOM" />
       <module name="Study" />
@@ -207,12 +293,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.Test" />
+      <module name="Study" />
+      <option name="VM_PARAMETERS" value="-XX:+UnlockCommercialFeatures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.Test1" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.Test2" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestThread" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thread.TestThread" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThisDemo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.ThisDemo" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThisDemo1" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.ThisDemo1" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thisAndSuper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,6 +386,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test1" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.ThisDemo" />
+      <item itemvalue="Application.ThisDemo1" />
       <item itemvalue="Application.CallableThreadTest" />
       <item itemvalue="Application.HeapOOM" />
       <item itemvalue="Application.IdCardUtilsTest" />
@@ -245,6 +401,13 @@
       <item itemvalue="Application.TestThread" />
       <item itemvalue="Application.ThreadClassDemo" />
       <item itemvalue="Application.JavaMethodAreaOOM" />
+      <item itemvalue="Application.DirectMemoryOOM" />
+      <item itemvalue="Application.ReferenceCountingGC" />
+      <item itemvalue="Application.Chinese" />
+      <item itemvalue="Application.BananaPeel" />
+      <item itemvalue="Application.Leaf" />
+      <item itemvalue="Application.PassingThis" />
+      <item itemvalue="Application.Test" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -282,7 +445,12 @@
       <workItem from="1603448461963" duration="539000" />
       <workItem from="1603449003529" duration="1000" />
       <workItem from="1603852754537" duration="996000" />
-      <workItem from="1603853871838" duration="3390000" />
+      <workItem from="1603853871838" duration="3657000" />
+      <workItem from="1604113388352" duration="763000" />
+      <workItem from="1604115885829" duration="516000" />
+      <workItem from="1604225543966" duration="1168000" />
+      <workItem from="1604277312508" duration="12000" />
+      <workItem from="1604400185155" duration="11145000" />
     </task>
     <task id="LOCAL-00001" summary="@me@alter">
       <created>1601204323416</created>
@@ -480,7 +648,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603414268105</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="@me@memoryAreaOverflow,HeapOOM|JavaMethodAreaOOM|JavaVmStackOOM|JavaVMStackSOF|RuntimeConstantPoolOOM,Java内存区域与内存溢出异常.">
+      <created>1603857483056</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603857483056</updated>
+    </task>
+    <task id="LOCAL-00030" summary="@me@memoryAreaOverflow,DirectMemoryOOM,Java内存区域与内存溢出异常之本机直接内存溢出.">
+      <created>1604116143000</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1604116143000</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,8 +682,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="@me@CollectionsDemo,An excrcise about Map." />
-    <MESSAGE value="@me@CollectionsDemo,An excrcise about indexOfSubList and lastIndexOfSubList." />
     <MESSAGE value="@me@ArrayListSetAndAdd,An excrcise about set() and add() in ArrayList." />
     <MESSAGE value="@me@InterfaceDemo_TestOne,接口是一个比抽象类还抽象的类." />
     <MESSAGE value="@me@InterfaceDemo_TestThree,接口不可以创建对象." />
@@ -525,9 +705,15 @@
     <MESSAGE value="@me@split,字符串数字字母分割实现." />
     <MESSAGE value="@me@IdCardUtils,身份证号码验证小程序." />
     <MESSAGE value="@me@algorithm,T_0001_BigO,算法时间复杂度理解." />
-    <option name="LAST_COMMIT_MESSAGE" value="@me@algorithm,T_0001_BigO,算法时间复杂度理解." />
+    <MESSAGE value="@me@memoryAreaOverflow,HeapOOM|JavaMethodAreaOOM|JavaVmStackOOM|JavaVMStackSOF|RuntimeConstantPoolOOM,Java内存区域与内存溢出异常." />
+    <MESSAGE value="@me@memoryAreaOverflow,DirectMemoryOOM,Java内存区域与内存溢出异常之本机直接内存溢出." />
+    <option name="LAST_COMMIT_MESSAGE" value="@me@memoryAreaOverflow,DirectMemoryOOM,Java内存区域与内存溢出异常之本机直接内存溢出." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="311" y="228" key="#DirectMemoryOOM" timestamp="1604116082738">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="311" y="228" key="#DirectMemoryOOM/0.0.1536.824@0.0.1536.824" timestamp="1604116082738" />
     <state x="477" y="128" key="#HeapOOM" timestamp="1603853101081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -548,18 +734,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="77" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1603373756494" />
+    <state x="861" y="131" key="#ReferenceCountingGC" timestamp="1604226680397">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="861" y="131" key="#ReferenceCountingGC/0.0.1536.824@0.0.1536.824" timestamp="1604226680397" />
     <state x="770" y="146" key="#RuntimeConstantPoolOOM" timestamp="1603854960129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="770" y="146" key="#RuntimeConstantPoolOOM/0.0.1536.824@0.0.1536.824" timestamp="1603854960129" />
-    <state x="230" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603857264061">
+    <state x="230" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604455142840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="230" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603857264061" />
-    <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1603365683137">
+    <state x="230" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604455142840" />
+    <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1604226149764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603365683136" />
+    <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604226149764" />
     <state x="600" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603856403257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -568,50 +758,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="138" y="173" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603373729138" />
-    <state x="646" y="18" key="CommitChangelistDialog2" timestamp="1603857370660">
+    <state x="122" y="18" key="CommitChangelistDialog2" timestamp="1604116142324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="646" y="18" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603857370660" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601204702519">
+    <state x="122" y="18" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604116142324" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1604116195595">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601204702519" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1604116195595" />
     <state x="559" y="234" key="FileChooserDialogImpl" timestamp="1603856974739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="234" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603856974739" />
-    <state width="1109" height="242" key="GridCell.Tab.0.bottom" timestamp="1603857266896">
+    <state width="724" height="368" key="GridCell.Tab.0.bottom" timestamp="1604458089341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603857266896" />
-    <state width="1109" height="242" key="GridCell.Tab.0.center" timestamp="1603857266896">
+    <state width="724" height="368" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604458089341" />
+    <state width="724" height="368" key="GridCell.Tab.0.center" timestamp="1604458089341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603857266896" />
-    <state width="1109" height="242" key="GridCell.Tab.0.left" timestamp="1603857266895">
+    <state width="724" height="368" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604458089341" />
+    <state width="724" height="368" key="GridCell.Tab.0.left" timestamp="1604458089340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603857266895" />
-    <state width="1109" height="242" key="GridCell.Tab.0.right" timestamp="1603857266896">
+    <state width="724" height="368" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604458089340" />
+    <state width="724" height="368" key="GridCell.Tab.0.right" timestamp="1604458089341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603857266896" />
-    <state width="1109" height="67" key="GridCell.Tab.1.bottom" timestamp="1603857231990">
+    <state width="724" height="368" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604458089341" />
+    <state width="724" height="241" key="GridCell.Tab.1.bottom" timestamp="1604456290240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="67" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603857231990" />
-    <state width="1109" height="67" key="GridCell.Tab.1.center" timestamp="1603857231990">
+    <state width="724" height="241" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
+    <state width="724" height="241" key="GridCell.Tab.1.center" timestamp="1604456290240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="67" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603857231990" />
-    <state width="1109" height="67" key="GridCell.Tab.1.left" timestamp="1603857231989">
+    <state width="724" height="241" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
+    <state width="724" height="241" key="GridCell.Tab.1.left" timestamp="1604456290240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="67" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603857231989" />
-    <state width="1109" height="67" key="GridCell.Tab.1.right" timestamp="1603857231990">
+    <state width="724" height="241" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
+    <state width="724" height="241" key="GridCell.Tab.1.right" timestamp="1604456290240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1109" height="67" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603857231990" />
+    <state width="724" height="241" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
     <state x="381" y="0" key="SettingsEditor" timestamp="1603856978107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -628,14 +818,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="769" y="118" width="584" height="624" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1603855059532" />
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1603853871781">
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1604277313205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603853871781" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604277313205" />
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601351087356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601351087356" />
+    <state x="323" y="152" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604402839548">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="323" y="152" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1604402839548" />
+    <state x="390" y="138" width="755" height="548" key="find.popup" timestamp="1604226084456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="390" y="138" width="755" height="548" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604226084456" />
     <state x="530" y="128" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601279782418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -644,9 +842,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="560" y="215" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1601205115170" />
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603854485052">
+    <state x="794" y="145" width="700" height="530" key="recent.locations.popup" timestamp="1604226602401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603854485052" />
+    <state x="794" y="145" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1604226602401" />
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604458301081">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604458301081" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/thisAndSuper/Chinese.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Study$Test.ic" NAME="Test Coverage Results" MODIFIED="1604455350822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.thisAndSuper.*</FILTER>
+    </SUITE>
   </component>
 </project>
