@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d645410-d1a3-47b1-9a10-53469be24a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/memory/ReferenceCountingGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/BananaPeel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Chinese.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/ThisDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/ThisDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thisAndSuper/this1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/memory/FinalizeEscapeGC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +80,7 @@
       <recent name="E:\workplace_asiaInfo\Study\src\com\memoryAreaOverflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test2">
+  <component name="RunManager" selected="Application.FinalizeEscapeGC">
     <configuration name="BananaPeel" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.BananaPeel" />
       <module name="Study" />
@@ -137,6 +127,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.memoryAreaOverflow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinalizeEscapeGC" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.memory.FinalizeEscapeGC" />
+      <module name="Study" />
+      <option name="VM_PARAMETERS" value="-XX:+TraceClassUnloading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.memory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,6 +412,7 @@
       <item itemvalue="Application.Leaf" />
       <item itemvalue="Application.PassingThis" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="Application.FinalizeEscapeGC" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -450,7 +455,8 @@
       <workItem from="1604115885829" duration="516000" />
       <workItem from="1604225543966" duration="1168000" />
       <workItem from="1604277312508" duration="12000" />
-      <workItem from="1604400185155" duration="11145000" />
+      <workItem from="1604400185155" duration="11306000" />
+      <workItem from="1604762498956" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="@me@alter">
       <created>1601204323416</created>
@@ -662,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604116143000</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="@me@memoryAreaOverflow,com.thisAndSuper.*,this与super对比实现类.">
+      <created>1604458490613</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1604458490613</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +695,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="@me@ArrayListSetAndAdd,An excrcise about set() and add() in ArrayList." />
     <MESSAGE value="@me@InterfaceDemo_TestOne,接口是一个比抽象类还抽象的类." />
     <MESSAGE value="@me@InterfaceDemo_TestThree,接口不可以创建对象." />
     <MESSAGE value="@me@InterfaceDemo_TestTwo,接口可以继承." />
@@ -707,13 +719,18 @@
     <MESSAGE value="@me@algorithm,T_0001_BigO,算法时间复杂度理解." />
     <MESSAGE value="@me@memoryAreaOverflow,HeapOOM|JavaMethodAreaOOM|JavaVmStackOOM|JavaVMStackSOF|RuntimeConstantPoolOOM,Java内存区域与内存溢出异常." />
     <MESSAGE value="@me@memoryAreaOverflow,DirectMemoryOOM,Java内存区域与内存溢出异常之本机直接内存溢出." />
-    <option name="LAST_COMMIT_MESSAGE" value="@me@memoryAreaOverflow,DirectMemoryOOM,Java内存区域与内存溢出异常之本机直接内存溢出." />
+    <MESSAGE value="@me@memoryAreaOverflow,com.thisAndSuper.*,this与super对比实现类." />
+    <option name="LAST_COMMIT_MESSAGE" value="@me@memoryAreaOverflow,com.thisAndSuper.*,this与super对比实现类." />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="228" key="#DirectMemoryOOM" timestamp="1604116082738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="311" y="228" key="#DirectMemoryOOM/0.0.1536.824@0.0.1536.824" timestamp="1604116082738" />
+    <state x="834" y="140" key="#FinalizeEscapeGC" timestamp="1604764153132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="834" y="140" key="#FinalizeEscapeGC/0.0.1536.824@0.0.1536.824" timestamp="1604764153132" />
     <state x="477" y="128" key="#HeapOOM" timestamp="1603853101081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -742,10 +759,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="770" y="146" key="#RuntimeConstantPoolOOM/0.0.1536.824@0.0.1536.824" timestamp="1603854960129" />
-    <state x="230" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604455142840">
+    <state x="447" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604764715083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="230" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604455142840" />
+    <state x="447" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604764715083" />
     <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1604226149764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -758,10 +775,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="138" y="173" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603373729138" />
-    <state x="122" y="18" key="CommitChangelistDialog2" timestamp="1604116142324">
+    <state x="490" y="18" key="CommitChangelistDialog2" timestamp="1604764736309">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="122" y="18" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604116142324" />
+    <state x="490" y="18" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604764736309" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1604116195595">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -770,38 +787,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="234" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603856974739" />
-    <state width="724" height="368" key="GridCell.Tab.0.bottom" timestamp="1604458089341">
+    <state width="1493" height="402" key="GridCell.Tab.0.bottom" timestamp="1604764722500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="368" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604458089341" />
-    <state width="724" height="368" key="GridCell.Tab.0.center" timestamp="1604458089341">
+    <state width="1493" height="402" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604764722500" />
+    <state width="1493" height="402" key="GridCell.Tab.0.center" timestamp="1604764722500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="368" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604458089341" />
-    <state width="724" height="368" key="GridCell.Tab.0.left" timestamp="1604458089340">
+    <state width="1493" height="402" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604764722500" />
+    <state width="1493" height="402" key="GridCell.Tab.0.left" timestamp="1604764722500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="368" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604458089340" />
-    <state width="724" height="368" key="GridCell.Tab.0.right" timestamp="1604458089341">
+    <state width="1493" height="402" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604764722500" />
+    <state width="1493" height="402" key="GridCell.Tab.0.right" timestamp="1604764722500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="368" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604458089341" />
-    <state width="724" height="241" key="GridCell.Tab.1.bottom" timestamp="1604456290240">
+    <state width="1493" height="402" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604764722500" />
+    <state width="724" height="241" key="GridCell.Tab.1.bottom" timestamp="1604458578284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="241" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
-    <state width="724" height="241" key="GridCell.Tab.1.center" timestamp="1604456290240">
+    <state width="724" height="241" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604458578284" />
+    <state width="724" height="241" key="GridCell.Tab.1.center" timestamp="1604458578284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="241" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
-    <state width="724" height="241" key="GridCell.Tab.1.left" timestamp="1604456290240">
+    <state width="724" height="241" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604458578284" />
+    <state width="724" height="241" key="GridCell.Tab.1.left" timestamp="1604458578284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="241" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
-    <state width="724" height="241" key="GridCell.Tab.1.right" timestamp="1604456290240">
+    <state width="724" height="241" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604458578284" />
+    <state width="724" height="241" key="GridCell.Tab.1.right" timestamp="1604458578284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="241" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604456290240" />
+    <state width="724" height="241" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604458578284" />
     <state x="381" y="0" key="SettingsEditor" timestamp="1603856978107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -846,10 +863,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="794" y="145" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1604226602401" />
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604458301081">
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604763823254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604458301081" />
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604763823254" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
