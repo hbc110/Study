@@ -1,6 +1,6 @@
 package com.system;
 
-import java.util.Arrays;
+import com.log.writeLog;
 
 public class getProperty {
     public static void main(String[] args) {
@@ -113,5 +113,41 @@ public class getProperty {
         // 用户的当前工作目录
         String user_dir = System.getProperty("user.dir");
         System.out.println("user_dir = " + user_dir);
+
+        String path = System.getProperty("user.dir") + "\\src\\com\\log\\001.log";
+        String logpath = path.replace("\\","/");
+        String content = writeLog.getCurrentYYYYMMDDHHMMSS() + " 日志处理开始";
+        writeLog.writeFile(logpath,content);
+        content = writeLog.getCurrentYYYYMMDDHHMMSS() + " System.getProperty()可以传的参数为:";
+        writeLog.writeFile(logpath,content);
+        try{
+            writeLog.writeFile(logpath,"java.class.path=" + java_class_path);
+            writeLog.writeFile(logpath,"java.class.version=" +java_class_version);
+            writeLog.writeFile(logpath,"java.ext.dirs=" +java_ext_dirs);
+            writeLog.writeFile(logpath,"java.home.=" +java_home);
+            writeLog.writeFile(logpath,"java.io.tmpdir=" +java_io_tmpdir);
+            writeLog.writeFile(logpath,"java.library.path=" +java_library_path);
+            writeLog.writeFile(logpath,"java.sepcification.name=" +java_specification_name);
+            writeLog.writeFile(logpath,"java.specification.vendor=" +java_specification_vendor);
+            writeLog.writeFile(logpath,"java.specification.version=" +java_specification_version);
+            writeLog.writeFile(logpath,"java.vendor=" +java_vendor);
+            writeLog.writeFile(logpath,"java.vendor.url=" +java_vendor_url);
+            writeLog.writeFile(logpath,"java.version=" +java_version);
+            writeLog.writeFile(logpath,"java.vm.name=" +java_vm_name);
+            writeLog.writeFile(logpath,"java.vm.specification.name=" +java_vm_specification_name);
+            writeLog.writeFile(logpath,"java.vm.specification.vendor=" +java_vm_specification_vendor);
+            writeLog.writeFile(logpath,"java.class.path=" +java_vm_specification_version);
+            writeLog.writeFile(logpath,"java.vm.vendor=" +java_vm_vendor);
+            writeLog.writeFile(logpath,"java.vm.version=" +java_vm_version);
+            writeLog.writeFile(logpath,"os.arch=" +os_arch);
+            writeLog.writeFile(logpath,"os.name=" +os_name);
+            writeLog.writeFile(logpath,"os.version=" +os_version);
+            writeLog.writeFile(logpath,"user.dir=" +user_dir);
+            writeLog.writeFile(logpath,"user.homte=" +user_home);
+            writeLog.writeFile(logpath,"user.name=" +user_name);
+            writeLog.writeFile(logpath,"java.compiler=" +java_compiler);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
     }
 }
