@@ -1,6 +1,5 @@
 package com.log;
 
-import javax.swing.text.LabelView;
 import java.io.IOException;
 import java.util.Date;
 import java.util.logging.FileHandler;
@@ -13,6 +12,7 @@ public class TestLog {
     public static void main(String[] args) throws IOException{
         Logger log = Logger.getLogger("testlog");
         log.setLevel(Level.ALL);
+        // 获取当前用户工作目录
         String path = System.getProperty("user.dir");
         FileHandler fileHandler = new FileHandler("testlog.log");
         fileHandler.setLevel(Level.ALL);
