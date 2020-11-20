@@ -12,9 +12,12 @@ public class TestLog {
     public static void main(String[] args) throws IOException{
         Logger log = Logger.getLogger("testlog");
         log.setLevel(Level.ALL);
-        // 获取当前用户工作目录
-        String path = System.getProperty("user.dir");
-        FileHandler fileHandler = new FileHandler("testlog.log");
+        // 获取当前用户工作目录 "user.dir"默认项目根目录
+        String path = System.getProperty("user.dir")+ "\\src\\com\\log\\testlog.log";
+        String path1 = path.replace("\\","/");
+        // 相对路径，放在本地项目根目录下
+        // FileHandler fileHandler = new FileHandler("testlog.log");
+        FileHandler fileHandler = new FileHandler(path);
         fileHandler.setLevel(Level.ALL);
         fileHandler.setFormatter(new LogFormatter());
         log.addHandler(fileHandler);
