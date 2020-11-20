@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d645410-d1a3-47b1-9a10-53469be24a43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/system/getProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/log/TestLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/log/TestLog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="E:\workplace_asiaInfo\Study\src\com\memoryAreaOverflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestLog">
+  <component name="RunManager" selected="Application.getProperty">
     <configuration name="BananaPeel" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thisAndSuper.BananaPeel" />
       <module name="Study" />
@@ -402,6 +402,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="getProperty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.system.getProperty" />
+      <module name="Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.TestLog" />
       <item itemvalue="Application.Test1" />
@@ -427,7 +440,13 @@
       <item itemvalue="Application.PassingThis" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.FinalizeEscapeGC" />
+      <item itemvalue="Application.getProperty" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.getProperty" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -475,7 +494,7 @@
       <workItem from="1604882047979" duration="68000" />
       <workItem from="1605793767781" duration="2270000" />
       <workItem from="1605832574552" duration="868000" />
-      <workItem from="1605836026204" duration="1088000" />
+      <workItem from="1605836026204" duration="3849000" />
     </task>
     <task id="LOCAL-00001" summary="@me@alter">
       <created>1601204323416</created>
@@ -715,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605833424023</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="@me@log,com.log.TestLog,java.util.logging生成日志文件.修改保存日志的目录">
+      <created>1605837137074</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1605837137074</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -735,7 +761,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="@me@InterfaceDemo_PlayerImpl,运动员教练模型(类，抽象类，接口实现)." />
     <MESSAGE value="@me@PoymorphicTest_FuZi,类的多态使用." />
     <MESSAGE value="@me@PoymorphicTest_FuZi,类和接口的多态使用." />
     <MESSAGE value="@me@PoymorphicTest_FuZi,添加注释(父类引用指向子类的对象)." />
@@ -760,7 +785,8 @@
     <MESSAGE value="@me@memory,com.memory.FinalizeEscapeGC,对象生存和毁灭." />
     <MESSAGE value="@me@log,com.log.TestLog,java.util.logging生成日志文件." />
     <MESSAGE value="@me@log,com.log.TestLog,java.util.logging生成日志文件.添加注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="@me@log,com.log.TestLog,java.util.logging生成日志文件.添加注释" />
+    <MESSAGE value="@me@log,com.log.TestLog,java.util.logging生成日志文件.修改保存日志的目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="@me@log,com.log.TestLog,java.util.logging生成日志文件.修改保存日志的目录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="228" key="#DirectMemoryOOM" timestamp="1604116082738">
@@ -815,10 +841,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="138" y="173" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603373729138" />
-    <state x="259" y="47" width="911" height="682" key="CommitChangelistDialog2" timestamp="1605833423093">
+    <state x="259" y="47" width="911" height="682" key="CommitChangelistDialog2" timestamp="1605837136493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="259" y="47" width="911" height="682" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605833423093" />
+    <state x="259" y="47" width="911" height="682" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605837136493" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1605837114148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -827,22 +853,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="234" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603856974739" />
-    <state width="1493" height="140" key="GridCell.Tab.0.bottom" timestamp="1605836694245">
+    <state width="1493" height="401" key="GridCell.Tab.0.bottom" timestamp="1605839996241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605836694245" />
-    <state width="1493" height="140" key="GridCell.Tab.0.center" timestamp="1605836694245">
+    <state width="1493" height="401" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605839996241" />
+    <state width="1493" height="401" key="GridCell.Tab.0.center" timestamp="1605839996241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605836694245" />
-    <state width="1493" height="140" key="GridCell.Tab.0.left" timestamp="1605836694245">
+    <state width="1493" height="401" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605839996241" />
+    <state width="1493" height="401" key="GridCell.Tab.0.left" timestamp="1605839996241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605836694245" />
-    <state width="1493" height="140" key="GridCell.Tab.0.right" timestamp="1605836694245">
+    <state width="1493" height="401" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605839996241" />
+    <state width="1493" height="401" key="GridCell.Tab.0.right" timestamp="1605839996241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605836694245" />
+    <state width="1493" height="401" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605839996241" />
     <state width="724" height="241" key="GridCell.Tab.1.bottom" timestamp="1604458578284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -903,10 +929,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="794" y="145" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1604226602401" />
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604763823254">
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605838226471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604763823254" />
+    <state x="46" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605838226471" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
