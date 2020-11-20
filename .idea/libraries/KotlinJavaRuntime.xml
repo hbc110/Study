@@ -5,6 +5,8 @@
       <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/kotlin-test.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/cglib-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
